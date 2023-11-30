@@ -19,7 +19,7 @@ const MonthlyPaidFarmers = () => {
     <div className="mt-20 flex-1">
       <div className="mb-10">
         <p className="text-xl font-semibold tracking-light text-slate-900">
-          Number of farmers paid Monthly (₦)
+          Number of farmers paid Monthly
         </p>
       </div>
       <div className="w-full max-w-full h-[400px] lg:h-[500px]">

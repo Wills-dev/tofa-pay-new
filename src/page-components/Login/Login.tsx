@@ -10,7 +10,7 @@ import { axiosInstance } from "@/shared-components/baseUrl";
 import { useLogin } from "@/hooks/useLogin";
 
 const Login = () => {
-  const { userId, token } = useParams();
+  const { userId } = useParams();
   const {
     handleSubmit,
     error,
@@ -23,7 +23,7 @@ const Login = () => {
 
   useMemo(() => {
     (async () => {
-      if (userId && token) {
+      if (userId) {
         await axiosInstance.get(`/user/user-verify/${userId}`);
         toast.success("Your email was successfully verified", {
           duration: 4000,
@@ -34,7 +34,7 @@ const Login = () => {
         });
       }
     })();
-  }, [userId, token]);
+  }, [userId]);
 
   return (
     <main className="w-full h-screen ">
