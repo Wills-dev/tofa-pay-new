@@ -1,0 +1,28 @@
+/* @import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"; */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Mulish&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .padding {
+    @apply sm:px-30 px-8 sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply xl:pl-[6rem] lg:pl-[4rem] sm:pl-[2rem] pl-3;
+  }
+
+  .padding-x {
+    @apply xl:px-[6rem] lg:px-[4rem] sm:px-[2rem] px-3;
+  }
+
+  .padding-y {
+    @apply sm:py-20 py-10;
+  }
+  .hover-nav {
+    @apply bg-primary-green text-[#fcfefd] font-bold rounded-[10px] transition-all;
+  }
+}
