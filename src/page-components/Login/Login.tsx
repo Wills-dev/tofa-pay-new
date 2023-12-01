@@ -25,13 +25,16 @@ const Login = () => {
     (async () => {
       if (userId) {
         await axiosInstance.get(`/user/user-verify/${userId}`);
-        toast.success("Your email was successfully verified", {
-          duration: 4000,
-          style: {
-            background: "#353434",
-            color: "#fff",
-          },
-        });
+        toast.success(
+          "Your email was successfully verified. Login with the details provided in your email.",
+          {
+            duration: 4000,
+            style: {
+              background: "#353434",
+              color: "#fff",
+            },
+          }
+        );
       }
     })();
   }, [userId]);

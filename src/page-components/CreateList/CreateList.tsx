@@ -118,7 +118,7 @@ const CreateList = () => {
                         <th className="bg-gray-100 border-b text-left px-4 py-4 whitespace-nowrap font-semibold">
                           Amount to be paid to Supplier
                         </th>
-                        <th className="bg-gray-100 border-b text-left px-4 py-4 whitespace-nowrap rounded-tr-xl font-semibold sticky right-0 ">
+                        <th className="bg-gray-100 border-b text-left px-4 py-4 whitespace-nowrap rounded-tr-xl font-semibold sticky right-0 z-10 ">
                           Action
                         </th>
                       </tr>
